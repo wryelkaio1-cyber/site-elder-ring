@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Contato - O Caminho do Maculado</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="particles"></div>
+  <header class="site-header">
+    <img src="assets/logo.png" class="logo-small" alt="logo">
+    <nav>
+      <a href="home.html">Início</a>
+      <a href="build.html">Build</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="lore.html">Lore</a>
+      <a href="contato.html" class="active">Contato</a>
+      <a href="#" onclick="logout()" class="right">Sair</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Contato</h1>
+    <form onsubmit="fakeSend(event)" class="contact-form">
+      <input placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
+      <textarea placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+      <p class="sent" id="sent" style="display:none;color:#b6e27a">Mensagem preparada (simulada).</p>
+    </form>
+  </main>
+
+  <footer class="site-footer">Obrigado por visitar — volte sempre.</footer>
+
+  <script src="script.js"></script>
+  <script>proteger();</script>
+</body>
+</html>
